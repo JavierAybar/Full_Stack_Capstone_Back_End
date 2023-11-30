@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2023-12-01
+  city: MyString
+  description: MyString
+  user: one
+  vehicle: one
+
+two:
+  date: 2023-12-01
+  city: MyString
+  description: MyString
+  user: two
+  vehicle: two
