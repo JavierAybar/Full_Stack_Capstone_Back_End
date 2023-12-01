@@ -2,7 +2,10 @@ class Api::V1::VehiclesController < ApplicationController
   # TODO: update actions
   def create; end
 
-  def show; end
+  def show
+    @vehicle = Vehicle.find(params[:id])
+    render json: @vehicle, status: :ok
+  end
 
   def index
     @vehicles = Vehicle.order(created_at: :desc).all
