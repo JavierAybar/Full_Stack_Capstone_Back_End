@@ -20,9 +20,9 @@ Rails.application.routes.draw do
   # root "posts#index"
   namespace :api do
     namespace :v1 do
-      resources :reservations
       resources :users
-      resources :cars
+      resources :vehicles
+      resources :reservations
     end
   end
 end
