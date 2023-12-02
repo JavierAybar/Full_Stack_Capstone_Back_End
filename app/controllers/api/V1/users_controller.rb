@@ -1,5 +1,5 @@
 class Api::V1::UsersController < ApplicationController
-  before_action :authenticate_admin!, only: [:create, :destroy]
+  before_action :authenticate_admin!, only: %i[create destroy]
   # TODO: update actions
   def create
     user = User.new(users_params)
