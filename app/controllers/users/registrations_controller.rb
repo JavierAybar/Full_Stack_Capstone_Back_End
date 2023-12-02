@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 class Users::RegistrationsController < Devise::RegistrationsController
+  include RackSessionFix
   respond_to :json
   # before_action :configure_sign_up_params, only: [:create]
   # before_action :configure_account_update_params, only: [:update]
@@ -61,6 +62,10 @@ class Users::RegistrationsController < Devise::RegistrationsController
   #   super(resource)
   # end
   private
+
+  def sign_up_params
+    params.require(:user).permit(:username, :email, :password, :password_confirmation)
+  end
 
   def respond_with(resource, _opts = {})
     if request.method == "POST" && resource.persisted?
