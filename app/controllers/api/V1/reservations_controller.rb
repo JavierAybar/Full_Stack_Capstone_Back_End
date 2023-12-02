@@ -1,30 +1,30 @@
 class Api::V1::ReservationsController < ApplicationController
   # TODO: update according to user and vehicle
   def create
-    reservation = Reservation.new(reservations_params)
-    if reservation.save
-      render json: { reservation: }
+    add_reservation = Reservation.new(reservations_params)
+    if add_reservation.save
+      render json: { add_reservation: }
     else
-      render json: { errors: reservation.errors.full_messages }, status: :unprocessable_error
+      render json: { errors: add_reservation.errors.full_messages }, status: :unprocessable_error
     end
   end
 
   def update
     # a PUT method that require the reservation id
     # /api/v1/reservations/:id
-    reservation = Reservation.update(reservations_params)
-    if reservation.save
-      render json: { reservation: }
+    update_reservation = Reservation.update(reservations_params)
+    if update_reservation.save
+      render json: { update_reservation: }
     else
-      render json: { errors: reservation.errors.full_messages }, status: :unprocessable_error
+      render json: { errors: update_reservation.errors.full_messages }, status: :unprocessable_error
     end
   end
 
   def show
-    reservation = Reservation.find_by(id: params[:id])
+    show_reservation = Reservation.find_by(id: params[:id])
 
-    if reservation
-      render json: { reservation: }
+    if show_reservation
+      render json: { show_reservation: }
     else
       render json: { message: 'not found' }
     end
@@ -32,11 +32,11 @@ class Api::V1::ReservationsController < ApplicationController
 
   def index
     # TODO: show all the reservations of the current authenticated user
-    # reservations = Reservation.where(user_id: @current_user)
-    reservations = Reservation.all
+    # all_reservations = Reservation.where(user_id: @current_user)
+    all_reservations = Reservation.all
 
-    if reservations
-      render json: { reservations: }
+    if all_reservations
+      render json: { all_reservations: }
     else
       render json: { error: 'no reservation yet' }
     end
@@ -45,8 +45,8 @@ class Api::V1::ReservationsController < ApplicationController
   # a DELETE method that require the reservation id
   # /api/v1/reservations/:id
   def destroy
-    reservation = Reservation.find(params[:id]).destroy
-    render json: { destroy: reservation }
+    delete_reservation = Reservation.find(params[:id]).destroy
+    render json: { destroy: delete_reservation }
   end
 
   private
