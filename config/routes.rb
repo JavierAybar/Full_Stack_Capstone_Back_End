@@ -9,10 +9,9 @@ Rails.application.routes.draw do
   # root "posts#index"
   namespace :api do
     namespace :v1 do
-      resources :users, only: [:show, :create, :destroy] do
-        resources :reservations, only: [:create, :show, :index]
-      end
-      resources :vehicles, only: [:create, :show, :index, :destroy]
+      resources :users
+      resources :vehicles
+      resources :reservations
     end
   end
 end
