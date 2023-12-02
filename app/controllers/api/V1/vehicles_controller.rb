@@ -14,7 +14,7 @@ class Api::V1::VehiclesController < ApplicationController
       render json: { error: 'No vehicles found' }, status: :not_found
     else
       render json: @vehicles
-    end  
+    end
   end
 
   def destroy; end
