@@ -1,11 +1,21 @@
 class Api::V1::ReservationsController < ApplicationController
-  # TODO: update actions
   def create
     reservation = Reservation.new(reservations_params)
     if reservation.save
-      render json: {reservation: reservation}
+      render json: { reservation: }
     else
-      render json: {errors: reservation.errors.full_messages}, status: :unprocessable_error
+      render json: { errors: reservation.errors.full_messages }, status: :unprocessable_error
+    end
+  end
+
+  def update
+    # a PUT method that require the reservation id
+    # /api/v1/reservations/:id
+    reservation = Reservation.update(reservations_params)
+    if reservation.save
+      render json: { reservation: }
+    else
+      render json: { errors: reservation.errors.full_messages }, status: :unprocessable_error
     end
   end
 
@@ -13,9 +23,9 @@ class Api::V1::ReservationsController < ApplicationController
     reservation = Reservation.find_by(id: params[:id])
 
     if reservation
-      render json: {reservation: reservation}
+      render json: { reservation: }
     else
-      render json: {message: 'not found'}
+      render json: { message: 'not found' }
     end
   end
 
@@ -25,15 +35,17 @@ class Api::V1::ReservationsController < ApplicationController
     reservations = Reservation.all
 
     if reservations
-      render json: {reservations: reservations}
+      render json: { reservations: }
     else
-      render json: {error: "no reservation yet"}
+      render json: { error: 'no reservation yet' }
     end
   end
 
+  # a DELETE method that require the reservation id
+  # /api/v1/reservations/:id
   def destroy
     reservation = Reservation.find(params[:id]).destroy
-    render json: {destroy: reservation}
+    render json: { destroy: reservation }
   end
 
   private
