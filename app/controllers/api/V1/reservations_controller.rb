@@ -1,4 +1,5 @@
 class Api::V1::ReservationsController < ApplicationController
+  before_action :authenticate_admin!, only: [:create, :destroy]
   # TODO: update according to user and vehicle
   def create
     add_reservation = Reservation.new(reservations_params)
