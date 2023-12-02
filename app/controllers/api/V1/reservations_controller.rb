@@ -1,4 +1,5 @@
 class Api::V1::ReservationsController < ApplicationController
+  # TODO: update according to user and vehicle
   def create
     reservation = Reservation.new(reservations_params)
     if reservation.save
