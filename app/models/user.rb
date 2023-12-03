@@ -7,7 +7,12 @@ class User < ApplicationRecord
 
   has_many :reservations
 
+
   def jwt_payload
     super.merge('foo' => 'bar')
+  end
+
+  def admin?
+    admin
   end
 end
