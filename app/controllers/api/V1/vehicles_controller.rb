@@ -18,5 +18,10 @@ class Api::V1::VehiclesController < ApplicationController
     end
   end
 
-  def destroy; end
+  def destroy
+    @vehicle = Vehicle.find(params[:id])
+    @vehicle.reservations.destroy_all
+    @vehicle.destroy
+    render json: { message: 'Vehicle deleted' }, status: :ok
+  end
 end
