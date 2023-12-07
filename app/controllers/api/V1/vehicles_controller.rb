@@ -1,5 +1,5 @@
 class Api::V1::VehiclesController < ApplicationController
-  before_action :authenticate_admin!, only: %i[create destroy]
+  # before_action :authenticate_admin!, only: %i[create destroy]
   # TODO: update actions
   def create; end
 

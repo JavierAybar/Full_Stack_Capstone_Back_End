@@ -1,10 +1,10 @@
 class Api::V1::ReservationsController < ApplicationController
-  before_action :authenticate_admin!, only: %i[create destroy]
+  # before_action :authenticate_admin!, only: %i[create destroy]
   # TODO: update according to user and vehicle
   def create
     add_reservation = Reservation.new(reservations_params)
     if add_reservation.save
-      render json: { add_reservation: }
+      render json: add_reservation
     else
       render json: { errors: add_reservation.errors.full_messages }, status: :unprocessable_error
     end
@@ -37,7 +37,7 @@ class Api::V1::ReservationsController < ApplicationController
     all_reservations = Reservation.all
 
     if all_reservations
-      render json: { all_reservations: }
+      render json: all_reservations
     else
       render json: { error: 'no reservation yet' }
     end
