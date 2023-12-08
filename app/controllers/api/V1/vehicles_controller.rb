@@ -5,7 +5,7 @@ class Api::V1::VehiclesController < ApplicationController
     @new_vehicle = Vehicle.new(api_params)
 
     if @new_vehicle.save
-      render json: { message: 'Data saved successfully' }, status: :created
+      render json: { message: 'Vehilcle saved successfully' }, status: :created
     else
       render json: { errors: @new_vehicle.errors.full_messages }, status: :unprocessable_entity
     end
