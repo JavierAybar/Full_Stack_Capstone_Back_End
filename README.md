@@ -1,5 +1,5 @@
 <a name="readme-top"></a>
-
+# Full_Stack_Capstone_Back_End
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
@@ -20,7 +20,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 **Full_Stack_Capstone_Back_End** <a name="about-project"></a>
+# 📖 Car Reservation App <a name="about-project"></a>
+
+The project is based on an app to book an appointment to try a motorcycle. and follow the given design of the website but with personalized content for making a car reservation app, this is the project back-end, it's used as an API for the front-end [found here](https://github.com/JavierAybar/Full_Stack_Capstone_Front_End).
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -33,7 +35,8 @@
   <ul>
     <li><a href="https://react.dev/">React</a></li>
     <li><a href="https://www.ruby-lang.org/en/">Ruby</a></li>
-    <li><a href="https://getbootstrap.com/">TailwindCSS</a></li>
+    <li><a href="https://getbootstrap.com/">Bootstrap</a></li>
+    <li><a href="https://tailwindcss.com/">TailwindCSS</a></li>
   </ul>
 </details>
 
@@ -150,7 +153,7 @@ Feel free to check the [issues page](../../issues/).
 <!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
+[Vespa](https://www.behance.net/gallery/26425031/Vespa-Responsive-Redesign) - Responsive Redesign by Murat Korkmaz
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
