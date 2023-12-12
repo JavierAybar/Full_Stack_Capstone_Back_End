@@ -1,5 +1,5 @@
 <a name="readme-top"></a>
-
+# Full_Stack_Capstone_Back_End
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
@@ -20,7 +20,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 **Full_Stack_Capstone_Back_End** <a name="about-project"></a>
+# 📖 Car Reservation App <a name="about-project"></a>
+
+The project is based on an app to book an appointment to try a motorcycle. and follow the given design of the website but with personalized content for making a car reservation app, this is the project back-end, it's used as an API for the front-end [found here](https://github.com/JavierAybar/Full_Stack_Capstone_Front_End).
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -33,7 +35,8 @@
   <ul>
     <li><a href="https://react.dev/">React</a></li>
     <li><a href="https://www.ruby-lang.org/en/">Ruby</a></li>
-    <li><a href="https://getbootstrap.com/">TailwindCSS</a></li>
+    <li><a href="https://getbootstrap.com/">Bootstrap</a></li>
+    <li><a href="https://tailwindcss.com/">TailwindCSS</a></li>
   </ul>
 </details>
 
@@ -55,8 +58,31 @@
 
 ### Key Features <a name="key-features"></a>
 
-Uncover the essential features of **Full_Stack_Capstone_Back_End**:
+- [x] The user logs in to the website by typing the Email and Password.
+- [x] In the navigation panel, the user can see links to:
+- "Items list".
+- "Reserve" form.
+- "My reservations".
+- "Add items".
+- "Delete items" (the link is visible to everybody).
+- [x] On the main page, the user can see a list of motorcycles/doctors/classes/items that you selected as a theme.
+List
 
+- [x] When the user selects a specific item, they can see the details page with its full description.
+- [x] On the details page, the user can click the "Reserve" button.
+- [x] When the user clicks the "Add item" link in the navigation panel they can see a form for adding a new item.
+- [x] Make the app responsive, creating both mobile and desktop versions.
+
+- [x] When the user clicks the "Delete item" link in the navigation panel they can see a list of all items with title and "Delete" button.
+- [x] When the user clicks the "Delete" button, the selected item is marked as removed and does not show on the main list anymore.
+- [x] To reserve an appointment, the user has to select a date and city (username and selected item are auto-filled).
+- [x] Have all necessary inputs.
+- [x] The user can access the "Reserve" page from the navigation panel. In that case, only the username is auto-filled.
+
+- [x] When the user clicks the "My reservations" link in the navigation panel they can see a list of their reservations (with information about item name, date, and city).
+- [x] Have full documentation for the API.
+- [x] Implement proper user authentication from the front end to the server.
+- [x] The "Add item" and "Delete item" links are accessible only by users who are admins.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -117,10 +143,10 @@ Use this command to fix **Stylelint** Errors:
 - Twitter: [@RezaMerzie](https://twitter.com/RezaMerzaie7)
 - LinkedIn: [@RezaMerzie](https://www.linkedin.com/in/reza-merzaie)
 
-👤 Abdelaziz Ali
+👨🏼‍🚀 **Abdelaziz Mahdi** 🐱‍👤
 
-- GitHub: [@Abdelaziz-Ali](https://github.com/Abdelaziz-Ali)
-- Twitter: [@AbdelazizDV](https://twitter.com/AbdelazizDV)
+- GitHub: [@Abdelaziz-Mahdi](https://github.com/Abdelaziz-Mahdi)
+- Twitter: [@_AbdelazizMahdi](https://twitter.com/_AbdelazizMahdi)
 - LinkedIn: [in/abdelaziz-mahdi](https://www.linkedin.com/in/abdelaziz-mahdi)
 
 👤 **Nurbol Sultanov**
@@ -134,6 +160,7 @@ Use this command to fix **Stylelint** Errors:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
+- Add about page.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -150,7 +177,7 @@ Feel free to check the [issues page](../../issues/).
 <!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
+[Vespa](https://www.behance.net/gallery/26425031/Vespa-Responsive-Redesign) - Responsive Redesign by Murat Korkmaz
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
