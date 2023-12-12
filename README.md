@@ -160,7 +160,7 @@ Use this command to fix **Stylelint** Errors:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- About page.
+- Add about page.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
