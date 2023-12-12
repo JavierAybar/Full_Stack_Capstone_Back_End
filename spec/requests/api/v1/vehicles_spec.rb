@@ -58,7 +58,6 @@ RSpec.describe 'api/v1/vehicles', type: :request do
       end
     end
 
-
     delete('delete vehicle') do
       response(200, 'successful') do
         let(:id) { '123' }
