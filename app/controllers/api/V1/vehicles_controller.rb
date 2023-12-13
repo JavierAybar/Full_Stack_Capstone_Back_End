@@ -27,10 +27,18 @@ class Api::V1::VehiclesController < ApplicationController
   end
 
   def destroy
-    @vehicle = Vehicle.find(params[:id])
-    @vehicle.reservations.destroy_all
-    @vehicle.destroy
-    render json: { message: 'Vehicle deleted' }, status: :ok
+    @vehicle = Vehicle.find_by(id: params[:id])
+  
+    if @vehicle
+      @vehicle.reservations.destroy_all
+      if @vehicle.destroy
+        render json: { message: 'Vehicle deleted' }, status: :ok
+      else
+        render json: { errors: 'Vehicle could not be deleted' }, status: :unprocessable_entity
+      end
+    else
+      render json: { errors: 'Vehicle not found' }, status: :not_found
+    end
   end
 
   private
