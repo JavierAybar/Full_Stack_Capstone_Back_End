@@ -9,6 +9,7 @@
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
 - [💻 Getting Started](#getting-started)
+  - [Diagram](#diagram)
   - [Install](#install)
   - [Usage](#usage)
   - [Linters](#linters)
@@ -89,6 +90,10 @@ List
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
+
+### Diagram <a name="diagram"></a>
+
+[See The ERD diagram](./ERD_diagram.png)
 
 To get a local copy up and running, follow these steps.
 
