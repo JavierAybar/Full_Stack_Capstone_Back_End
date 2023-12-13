@@ -38,7 +38,7 @@ class Users::SessionsController < Devise::SessionsController
       render json: {
         status: 200,
         message: 'logged out successfully',
-        admin: current_user.admin 
+        admin: current_user.admin
       }, status: :ok
     else
       render json: {
@@ -48,4 +48,3 @@ class Users::SessionsController < Devise::SessionsController
     end
   end
 end
-
