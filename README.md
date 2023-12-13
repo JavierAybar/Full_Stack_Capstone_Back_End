@@ -100,6 +100,12 @@ Install this project with:
   bundle install
 ```
 
+Setup Database by running these commands:
+```sh
+  rails db:create
+  rails db:migrate
+```
+
 ### Usage <a name="usage"></a>
 
 To run the project, execute the following command:
