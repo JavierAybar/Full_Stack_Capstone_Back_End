@@ -46,8 +46,13 @@ class Api::V1::ReservationsController < ApplicationController
   # a DELETE method that require the reservation id
   # /api/v1/reservations/:id
   def destroy
-    delete_reservation = Reservation.find(params[:id]).destroy
-    render json: { destroy: delete_reservation }
+    delete_reservation = Reservation.find_by(id: params[:id])
+  
+    if delete_reservation&.destroy
+      render json: { message: 'Reservation successfully deleted' }
+    else
+      render json: { errors: 'Reservation could not be found or not deleted' }, status: :unprocessable_entity
+    end
   end
 
   private
