@@ -47,7 +47,7 @@ class Api::V1::ReservationsController < ApplicationController
   # /api/v1/reservations/:id
   def destroy
     delete_reservation = Reservation.find_by(id: params[:id])
-  
+
     if delete_reservation&.destroy
       render json: { message: 'Reservation successfully deleted' }
     else

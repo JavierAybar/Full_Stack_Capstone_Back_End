@@ -28,7 +28,7 @@ class Api::V1::VehiclesController < ApplicationController
 
   def destroy
     @vehicle = Vehicle.find_by(id: params[:id])
-  
+
     if @vehicle
       @vehicle.reservations.destroy_all
       if @vehicle.destroy
