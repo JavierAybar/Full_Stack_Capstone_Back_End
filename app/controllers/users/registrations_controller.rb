@@ -10,9 +10,11 @@ class Users::RegistrationsController < Devise::RegistrationsController
 
   def respond_with(resource, _opts = {})
     if request.method == 'POST' && resource.persisted?
+      auth_token = resource.generate_jwt
       render json: {
-        status: { code: 200, message: 'sucessfull.' },
-        data: UserSerializer.new(resource).serializable_hash[:data][:attributes]
+        status: { code: 200, message: 'Registration successful.' },
+        data: UserSerializer.new(resource).serializable_hash[:data][:attributes],
+        token: auth_token
       }, status: :ok
     elsif request.method == 'DELETE'
       render json: {

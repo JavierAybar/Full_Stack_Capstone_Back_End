@@ -7,6 +7,10 @@ class User < ApplicationRecord
 
   has_many :reservations
 
+  def generate_jwt
+    JWT.encode({ id:, exp: 60.days.from_now.to_i }, Rails.application.secrets.secret_key_base)
+  end
+
   def jwt_payload
     super.merge('foo' => 'bar')
   end
