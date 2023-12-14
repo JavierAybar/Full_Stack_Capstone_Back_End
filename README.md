@@ -5,6 +5,7 @@
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
+  - [Kanban board](#kanban_board)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
@@ -25,6 +26,22 @@
 
 The project is based on an app to book an appointment to try a motorcycle. and follow the given design of the website but with personalized content for making a car reservation app, this is the project back-end, it's used as an API for the front-end [found here](https://github.com/JavierAybar/Full_Stack_Capstone_Front_End).
 Check out the API end-point [here](https://api-endpoint-qn9n.onrender.com)
+
+## Kanban board
+
+- [Kanban board](https://github.com/users/JavierAybar/projects/9)
+- [Initial image](https://drive.google.com/file/d/1cD0Ol0Tg3nDOy8FEBmQKrQz868ffMAnu/view?usp=sharing)
+
+### **_This project is made up of 5 participants._**
+[@JavierAybar](https://github.com/JavierAybar)
+
+[@Gh-Reza](https://github.com/Gh-Reza)
+
+[@Abdelaziz-Mahdi](https://github.com/Abdelaziz-Mahdi)
+
+[@Marcraphael12](https://github.com/Marcraphael12)
+
+[@everinurmind](https://github.com/everinurmind)
 
 ## 🛠 Built With <a name="built-with"></a>
 
