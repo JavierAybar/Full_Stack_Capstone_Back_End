@@ -1,11 +1,12 @@
 source 'https://rubygems.org'
 
-ruby '3.1.3'
+ruby '3.2.2'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'rails', '~> 7.1.2'
 
 gem 'pg'
+gem 'sprockets-rails'
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem 'puma', '>= 5.0'
