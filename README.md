@@ -5,6 +5,7 @@
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
+  - [Kanban board](#kanban_board)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
@@ -24,6 +25,18 @@
 # 📖 Car Reservation App <a name="about-project"></a>
 
 The project is based on an app to book an appointment to try a motorcycle. and follow the given design of the website but with personalized content for making a car reservation app, this is the project back-end, it's used as an API for the front-end [found here](https://github.com/JavierAybar/Full_Stack_Capstone_Front_End).
+
+## Kanban board
+
+- [Kanban board](https://github.com/users/JavierAybar/projects/9)
+- [Initial image](https://private-user-images.githubusercontent.com/129561152/287035103-291a399c-c0dc-4ca5-a5f7-5e05c1882f9f.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDI1ODU5MjUsIm5iZiI6MTcwMjU4NTYyNSwicGF0aCI6Ii8xMjk1NjExNTIvMjg3MDM1MTAzLTI5MWEzOTljLWMwZGMtNGNhNS1hNWY3LTVlMDVjMTg4MmY5Zi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBSVdOSllBWDRDU1ZFSDUzQSUyRjIwMjMxMjE0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIzMTIxNFQyMDI3MDVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT04ODJlMzFiZjJjNjVmZGM1YzM4MWViOTY5YTRjNzU0YjAyNGY2MmU2YTQ3MjEyNTM3NThkMWM2Yjg0NGU4MjllJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.Gbu7qFhcFUANYTi9IWprHpyfw9GoOSztrtn7-XYZSu0)
+
+### **_This project is made up of 5 participants._**
+@JavierAybar 
+@Gh-Reza 
+@Abdelaziz-Mahdi
+@Marcraphael12 
+@everinurmind 
 
 ## 🛠 Built With <a name="built-with"></a>
 
