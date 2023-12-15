@@ -45,7 +45,7 @@ Check out the API end-point [here](https://api-endpoint-qn9n.onrender.com)
 
 ## 🛠 Built With <a name="built-with"></a>
 
-<a href="https://github.com/JavierAybar/hello-react-front-end/tree/setup-front-end">See the React Application</a>
+<a href="https://github.com/JavierAybar/Full_Stack_Capstone_Front_End">See the React Application</a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
